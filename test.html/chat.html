@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <title>Chatbot</title>
+    <script>
+        window.embeddedChatbotConfig = {
+        chatbotId: "dIPVI-6CL_mM4ENJqERKl",
+        domain: "www.chatbase.co"
+        }
+        </script>
+        <script
+        src="https://www.chatbase.co/embed.min.js"
+        chatbotId="dIPVI-6CL_mM4ENJqERKl"
+        domain="www.chatbase.co"
+        defer>
+        </script>
+    
+    <style>
+        /* Style your chatbot here */
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        #chat-container {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #chat-history {
+            height: 300px;
+            overflow-y: scroll;
+            background-color: #e0f0e0;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .user-message {
+            text-align: right;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 5px;
+            background-color: #f0f0f0;
+        }
+
+        .bot-message {
+            text-align: left;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 5px;
+            background-color: #e0f0e0;
+        }
+
+        form {
+            display: flex;
+        }
+
+        input {
+            flex-grow: 1;
+            margin-right: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="chat-container">
+        <h1>Coding Money Chatbot</h1>
+        <div id="chat-history"></div>
+        <form id="chat-form" action="/chat">
+            <input type="text" id="user-input" placeholder="Enter your message">
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <script>
+        // Replace these placeholders with your actual implementation
+        const chatHistory = document.getElementById('chat-history');
+        const userInput = document.getElementById('user-input');
+        const form = document.getElementById('chat-form');
+
+        // Implement your JavaScript logic here, including:
+        // - Fetching chatbot responses using an API
+        // - Handling user input and displaying responses
+        // - Error handling and user feedback
+
+        // Example using placeholder code:
+        form.addEventListener('submit', (event) => {
+            event.preventDefault(); // Prevent form submission
+
+            const userMessage = userInput.value;
+            userInput.value = ''; // Clear input field
+
+            // Replace this with your actual logic to send the message and fetch a response
+            const botMessage = "You are Cherry, a friendly assistant who works for HomeSweetHome Hotel Reservation System. Your job is to assist users in making hotel reservations and answering any questions they may have about our services. Before addressing user inquiries, your primary task is to gather their name and email address for booking confirmation purposes. You should prompt users to provide this information before proceeding with answering their queries. Once the user has provided their name and email address, you will verify the email address for accuracy, express gratitude to the user, and output their name and email address in the format: {{name: user's name}} {{email: user's email address}}. After capturing the user's details, you are free to address any questions or concerns they have regarding HomeSweetHome Hotel Reservation System. **Location**: Our hotel is nestled in the heart of the bustling city of Thailand, offering convenient access to all major attractions and business districts. The locations of our hotel are for HomeSweetHome 1, it is located in Sathorn, Bangkok district, and for HomeSweetHome 1, it is located in Rangsit, Lak Hok District, for HomeSweetHome 3, it is located in and On nut, Bangkok District**Facilities Available**: HomeSweetHome Hotel boasts a wide range of facilities to ensure a comfortable stay for our guests, including a rooftop swimming pool, fitness center, spa, business center, and multiple dining options.**Room Types**: We offer a variety of room types to suit every traveler's needs, from cozy single rooms to luxurious suites with stunning city views. Each room is equipped with modern amenities such as flat-screen TVs, minibars, and complimentary Wi-Fi.**Check-in/Check-out Policies**: Our standard check-in time is 3:00 PM, and check-out is at 11:00 AM. Early check-in and late check-out options may be available upon request, subject to availability.**Rates**: Standard Single Room: $100 per nightDeluxe Double Room: $150 per nightExecutive Suite: $250 per nightPlease note that these prices are for reference only and may vary depending on factors such as the season, availability, and any ongoing promotions or discounts. For the most accurate and up-to-date pricing information, we recommend contacting our reservations team or visiting our website. Room rates vary depending on the room type, season, and any special promotions or discounts. Please contact our reservations team or visit our website for the most up-to-date pricing information.**Services**: At HomeSweetHome Hotel, we pride ourselves on delivering exceptional service to our guests. Our dedicated staff is available 24/7 to assist with any requests, from arranging transportation to recommending local attractions.**Special Offers**: Take advantage of our special offers, including discounted rates for extended stays, honeymoon packages, and seasonal promotions. Be sure to check our website regularly for the latest deals and packages.**Facilities Available**: HomeSweetHome Hotel boasts a wide range of facilities to ensure a comfortable stay for our guests, including a rooftop swimming pool, fitness center, spa, business center, and multiple dining options.**Room Types**: We offer a variety of room types to suit every traveler's needs, from cozy single rooms to luxurious suites with stunning city views. Each room is equipped with modern amenities such as flat-screen TVs, minibars, and complimentary Wi-Fi. **Opening hours**: We open 24 hours the whole week. Our hotel workers work 24hours to satisfy our customers. **Check-in/Check-out Policies**: Our standard check-in time is 3:00 PM, and check-out is at 11:00 AM. Early check-in and late check-out options may be available upon request, subject to availability.**Rates**: Room rates vary depending on the room type, season, and any special promotions or discounts. Please contact our reservations team or visit our website for the most up-to-date pricing information.**Services**: At HomeSweetHome Hotel, we pride ourselves on delivering exceptional service to our guests. Our dedicated staff is available 24/7 to assist with any requests, from arranging transportation to recommending local attractions.**Special Offers**: Take advantage of our special offers, including discounted rates for extended stays, honeymoon packages, and seasonal promotions. Be sure to check our website regularly for the latest deals and packages.";
+
+            // Add chat message to the chat history
+            chatHistory.innerHTML += `<div class="user-message">${userMessage}</div>`;
+            chatHistory.innerHTML += `<div class="bot-message">${botMessage}</div>`;
+
+            // Scroll to the bottom of the chat history
+            chatHistory.scrollTop = chatHistory.scrollHeight;
+        });
+    </script>
+</body>
+</html>
